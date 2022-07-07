@@ -1,2 +1,2 @@
-# Projetos-DIO
-Repositório para os desafios da DIO.
+# Desafios de Projetos da DIO.
+Repositório para os desafios, exercicíos e projetos da DIO.
