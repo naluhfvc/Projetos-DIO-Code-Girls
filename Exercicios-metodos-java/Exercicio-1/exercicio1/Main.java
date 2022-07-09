@@ -22,6 +22,9 @@ public class Main {
 
         //Emprestimo
         System.out.println("\nEmprestimo");
+        Emprestimo.calcular(1000,Emprestimo.getDuasParcelas());
+        Emprestimo.calcular(1000,Emprestimo.getTresParcelas());
+        Emprestimo.calcular(1000,6);
 
     }
 }
