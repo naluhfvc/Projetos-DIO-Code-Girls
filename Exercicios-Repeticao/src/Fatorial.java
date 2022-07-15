@@ -18,6 +18,6 @@ public class Fatorial {
             fatorial *= i;
         }
 
-        System.out.println("resultado: " + fatorial);
+        System.out.println(numero + "! = " + fatorial);
     }
 }
