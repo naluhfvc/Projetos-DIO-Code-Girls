@@ -11,7 +11,6 @@ public class ParEImpar {
         Scanner ler = new Scanner(System.in);
 
         int i = 0;
-        int numero;
         int pares = 0;
         int impares = 0;
 
@@ -19,7 +18,7 @@ public class ParEImpar {
 
         do {
             System.out.println("Digite um número:");
-            numero = ler.nextInt();
+            int numero = ler.nextInt();
 
             if(numero % 2 == 0)
                 pares++;
