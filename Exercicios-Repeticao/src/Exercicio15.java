@@ -1,5 +1,5 @@
 /*
-A série de Fibonacci é formada pela seqüência 1,1,2,3,5,8,13,21,34,55,...
+A série de Fibonacci é formada pela seqüência 0,1,1,2,3,5,8,13,21,34,55,...
  Faça um programa capaz de gerar a série até o n−ésimo termo.
  */
 
@@ -12,7 +12,7 @@ public class Exercicio15 {
 
         System.out.print("Digite a quantidade termos: ");
         int n = ler.nextInt();
-        int primeiro = 1;
+        int primeiro = 0;
         int segundo = 1;
         int proximo;
 
