@@ -19,7 +19,7 @@ public class Carro {
     Carro(){
     }
 
-   public Carro (String cor, int capacidadeTanque, String modelo) { //construtor do objeto
+   public Carro (String modelo, String cor, int capacidadeTanque) { //construtor do objeto
         this.modelo = modelo;
         this.cor = cor;
         this.capacidadeTanque = capacidadeTanque;
