@@ -33,11 +33,7 @@ public class Main {
         System.out.println(carro2.getCapacidadeTanque());
         System.out.println(carro2.calcularValorTotal(7.39));
 
-        Carro carro3 = new Carro();
-
-        carro3.setModelo("Civic");
-        carro3.setCor("branco");
-        carro3.setCapacidadeTanque(70);
+        Carro carro3 = new Carro("branco",70,"Civic"); //sobrecarga
 
         System.out.println("\nCARRO 3:");
         System.out.println(carro3.getModelo());

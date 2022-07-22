@@ -12,15 +12,19 @@ Evolua o conceito do exercício 2 e defina 1 método para calcular o valor total
  */
 public class Carro {
 
+    String modelo;
     String cor;
     int capacidadeTanque;
-    String modelo;
 
-   /* public Carro (String cor, int capacidadeTanque, String modelo) { //construtor do objeto
-        this.cor = cor;
+    Carro(){
+    }
+
+   public Carro (String cor, int capacidadeTanque, String modelo) { //construtor do objeto
         this.modelo = modelo;
+        this.cor = cor;
         this.capacidadeTanque = capacidadeTanque;
-    }*/
+    }
+
 
     public String getCor() {
         return cor;
