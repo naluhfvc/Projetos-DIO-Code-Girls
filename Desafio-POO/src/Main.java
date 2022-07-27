@@ -13,8 +13,7 @@ ABSTRAÇÃO, ENCAPSULAMENTO, HERANÇA E POLIMORFISMO
  iremos transformar em OBJETOS
  */
 
-import desafio.dominio.Curso;
-import desafio.dominio.Mentoria;
+import desafio.dominio.*;
 
 import java.time.LocalDate;
 
@@ -37,8 +36,37 @@ public class Main {
         mentoria1.setDescricao("Descrição mentoria de Java");
         mentoria1.setData(LocalDate.now());
 
-        System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria1);
+        Bootcamp bootcamp = new Bootcamp();
+        bootcamp.setNome("Bootcamp Java Developer");
+        bootcamp.setDescricao("Descrição Bootcamp Java Developer");
+        bootcamp.getConteudos().add(curso1);
+        bootcamp.getConteudos().add(curso2);
+        bootcamp.getConteudos().add(mentoria1);
+
+        Devs devAna = new Devs();
+        devAna.setNome("Ana");
+        devAna.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Ana:" + devAna.getConteudosInscritos());
+        devAna.progredir();
+        devAna.progredir();
+        System.out.println("-");
+        System.out.println("Conteúdos Inscritos Ana:" + devAna.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos Ana:" + devAna.getConteudosConcluidos());
+        System.out.println("XP:" + devAna.calcularTotalXp());
+
+        System.out.println("-------");
+
+        Devs devJoao = new Devs();
+        devJoao.setNome("Joao");
+        devJoao.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
+        devJoao.progredir();
+        devJoao.progredir();
+        devJoao.progredir();
+        System.out.println("-");
+        System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
+        System.out.println("Conteúdos Concluidos João:" + devJoao.getConteudosConcluidos());
+        System.out.println("XP:" + devJoao.calcularTotalXp());
+
     }
 }
